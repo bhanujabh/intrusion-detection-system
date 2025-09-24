@@ -21,12 +21,14 @@ The project includes **ablation studies**, evaluates multiple architectures, and
 - **CNNEncoder:** Tiny 1D CNN for extracting local feature patterns  
 - **GRUEncoder:** GRU to capture sequential patterns in feature vectors  
 - **TransformerEncoder:** Transformer to model global dependencies  
+- **ShallowNNEncoder:** Simple feedforward network for fast experiments  
+- **TinyCNNEncoder:** Smaller CNN variant optimized for faster training  
 - **CombinedModel:** Hybrid model concatenating embeddings from different encoders  
 
 ## Training
 - Loss: **Focal Loss** for class imbalance  
-- Optimizer: **Adam** 
-- Experiments: Ablation studies for combinations like `CNN`, `GRU`, `Transformer`, `CNN+GRU`, etc.  
+- Optimizer: **Adam**  
+- Experiments include **Tiny CNN and Shallow NN** for faster ablation studies and hybrid combinations.  
 
 ## Evaluation
 - Metrics reported:  
@@ -37,3 +39,9 @@ The project includes **ablation studies**, evaluates multiple architectures, and
   - **Confusion Matrix**  
   - **ROC Curve**  
 
+## Results
+| Model Combo            | Accuracy | F1 Macro | Precision | Recall   |
+|------------------------|----------|----------|-----------|----------|
+| Tiny CNN               | 0.998969 | 0.998969 | 0.998969  | 0.998969 |
+| Shallow NN             | 0.998992 | 0.998992 | 0.998992  | 0.998991 |
+| HybridCNNShallow       | 0.998431 | 0.998433 | 0.998431  | 0.998431 |
