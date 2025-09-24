@@ -25,8 +25,7 @@ The project includes **ablation studies**, evaluates multiple architectures, and
 
 ## Training
 - Loss: **Focal Loss** for class imbalance  
-- Optimizer: **Adam**  
-- Training strategy: **Early stopping** based on validation F1-score, learning rate scheduler  
+- Optimizer: **Adam** 
 - Experiments: Ablation studies for combinations like `CNN`, `GRU`, `Transformer`, `CNN+GRU`, etc.  
 
 ## Evaluation
@@ -38,5 +37,3 @@ The project includes **ablation studies**, evaluates multiple architectures, and
   - **Confusion Matrix**  
   - **ROC Curve**  
 
-## Results
-- Example performance (replace with your actual numbers):  
